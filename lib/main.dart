@@ -34,19 +34,12 @@ class myapp extends StatelessWidget{
             ),boxShadow: const [BoxShadow(color : Color(0xFF000000),   offset:Offset.zero,    blurRadius : 12.0,    spreadRadius : 0.0,  blurStyle :BlurStyle.normal)]
         ) ,
 
-        child:Row(
-          mainAxisAlignment:MainAxisAlignment.start ,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
-
-
-          children: [Container( color:Colors.red,child: Text("1" )),Text("2"),Text("3"),Text("4"),Text("5"),Text("6")],),
-      ),
+        child:Center(child:Icon(Icons.add,size: 50,),),
 
       ),
 
-    );
-    throw UnimplementedError();
+    ));
+
   }
 
 }
