@@ -31,10 +31,26 @@ class myapp extends StatelessWidget{
             borderRadius:BorderRadius.vertical(bottom:Radius.circular(30),
 
 
-            ),boxShadow: const [BoxShadow(color : Color(0xFF000000),   offset:Offset.zero,    blurRadius : 12.0,    spreadRadius : 0.0,  blurStyle :BlurStyle.normal)]
+            ), boxShadow: const [BoxShadow(color : Color(0xFF000000),   offset:Offset.zero,    blurRadius : 12.0,    spreadRadius : 0.0,  blurStyle :BlurStyle.normal)]
         ) ,
 
-        child:Center(child:Icon(Icons.add,size: 50,),),
+        child:Center(
+          child: SingleChildScrollView(
+
+              scrollDirection:Axis.horizontal,
+              child:Row(children: [
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+            Text("GGGkmkmkrfvG"),
+
+
+          ],)),
+        ),
 
       ),
 
