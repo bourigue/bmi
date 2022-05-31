@@ -1,21 +1,16 @@
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-void main() {
-  runApp( Test() );
-            }
+void main() => runApp(GetMaterialApp(home: myapp()));
 
 class myapp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home:Scaffold(
-      appBar: AppBar(
-
-      ),
-      body:Container(
-       child:Column(children: [InkWell(
-           onTap:(){
+      appBar: AppBar(),
+      body:Container(child:Column(children: [InkWell(onTap:(){
 
 
            },
