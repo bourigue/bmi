@@ -3,11 +3,11 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 
 class Controller extends GetxController{
 
-  int count = 0;
+  RxInt count = 2.obs;
   increment(){
 
     count++;
-    update();
+
   }
 
 }

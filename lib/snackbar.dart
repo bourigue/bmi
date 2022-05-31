@@ -2,12 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'controller.dart';
+
 void main(){
-  runApp(GetMaterialApp(home: Home()));
+ runApp(GetMaterialApp(home: Home()));
 }
 
 class Home extends StatelessWidget {
-
+    final Controller  c=Get.put(Controller());
   @override
   Widget build(context) {
 
@@ -23,18 +24,18 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GetBuilder<Controller>(
+            Obx(()=>Center(child: Text("${c.count.value}"))),
+         IconButton(onPressed: (){
+           c.increment();
+         }, icon: Icon(Icons.add))
+         //   Obx(()=>Center(child:ElevatedButton.icon(onPressed: () { c.increment(); }, icon:Icon(Icons.add), label: Text("add"),))),
+            
+        ]
 
-                init:Controller(),
-                builder:(c)=>Center(child: ElevatedButton(child: Text("add"),onPressed:(){c.increment();},))),
 
-            GetBuilder<Controller>(
+           
 
-                builder:(c)=>Center(child: Text("${c.count}"+"  MMM")))
-          ],
-        ),
-
-  );
+  ));
   }
 }
 
