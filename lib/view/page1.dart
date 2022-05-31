@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(context) {
 
     // Instantiate your class using Get.put() to make it available for all "child" routes there.
-    final Controller c = Get.put(Controller(),permanent:true);
+    final Controller c = Get.find();
 
     return Scaffold(
       // Use Obx(()=> to update Text() whenever count is changed.

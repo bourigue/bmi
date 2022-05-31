@@ -11,7 +11,7 @@ void main(){
 }
 
 class home extends StatelessWidget{
- //final  c=Get.lazyPut(()=>Controller());
+ final  c=Get.lazyPut(()=>Controller(),fenix: true);
  @override
  Widget build(BuildContext context) {
   return Scaffold(
