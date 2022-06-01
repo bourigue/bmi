@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+
               GetX<Controller>(init:Controller(), builder: (c){print("num1 ${c.num1}");return Text("${c.num1}");},),
               GetX<Controller>(builder: (c){print("num2 ${c.num2}");return Text("${c.num2}");} ,),
               GetX<Controller>(builder: (c){print("sum ${c.summ}");return Text("${c.summ}");},),
