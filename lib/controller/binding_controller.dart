@@ -7,6 +7,7 @@ class bindingcontroller extends Bindings{
   @override
   void dependencies() {
     Get.lazyPut(()=>Controller(),fenix: true);
+    Get.put(Controller());
   }
 
 
