@@ -199,6 +199,11 @@ class homecoloco extends StatelessWidget{
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       children: [
                         card("ghjk",56,456,"ghjk",66,"ghjk"),
+                        card("ghjk",56,456,"ghjk",66,"ghjk"),
+
+                        card("ghjk",56,456,"ghjk",66,"ghjk"),
+
+                        card("ghjk",56,456,"ghjk",66,"ghjk"),
 
 
 
@@ -313,6 +318,8 @@ decoration: BoxDecoration(
 
          ]
      ),
+    trailing: Icon(Icons.local_library,color: Colors.red,),
+
   ),)
 
 

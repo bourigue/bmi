@@ -154,6 +154,10 @@ class homecoloco2 extends StatelessWidget{
                     children: [
                       //Now let's create our chat tile custom widget
                       card("ghjk",56,456,"ghjk",66,"ghjk"),
+                      card("ghjk",56,456,"ghjk",66,"ghjk"),
+                      card("ghjk",56,456,"ghjk",66,"ghjk"),
+                      card("ghjk",56,456,"ghjk",66,"ghjk"),
+                      card("ghjk",56,456,"ghjk",66,"ghjk"),
                     ],
                   ),
                 ),
