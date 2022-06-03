@@ -8,6 +8,7 @@ import '../controller/controller.dart';
 
 
 class page2 extends StatelessWidget{
+
   final Controller c = Get.find();
 
   @override
