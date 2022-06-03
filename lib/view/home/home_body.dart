@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class homecoloco extends StatelessWidget{
   @override
@@ -197,22 +198,8 @@ class homecoloco extends StatelessWidget{
                       physics: NeverScrollableScrollPhysics(),
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       children: [
-                        card("ghjk"),
-                        card("ghjk"),
+                        card("ghjk",56,456,"ghjk",66,"ghjk"),
 
-                        card("ghjk"),
-
-                        card("ghjk"),
-
-                        card("ghjk"),
-
-                        card("ghjk"),
-
-                        card("ghjk"),
-
-                        card("ghjk"),
-
-                        card("ghjk"),
 
 
                       ],
@@ -269,19 +256,68 @@ Widget Filtre(String name){
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
   );
 }
-Widget card(String name){
+Widget card(String name,int age,double budget, String localisation, int capacity,String profile){
   return      InkWell(
     onTap: (){
       print("jdj");
     },
     child: Container(
-        height: 300,
+        height:300,
         margin: EdgeInsets.symmetric(horizontal: 5),
         padding: EdgeInsets.all(10),
         decoration:  BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-            color: Colors.white,
-            border: Border.all(color: Colors.black12)),
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
+            borderRadius: BorderRadius.all(Radius.circular(16)),
+            color: Color(0xff3f5f7f9),
+            ),
+        child: Column(
+children: [
+
+  Container(
+
+decoration: BoxDecoration(
+
+
+    borderRadius: BorderRadius.all(Radius.circular(5)),
+
+        image: DecorationImage(
+            image: AssetImage("media/images/img.png"),
+        fit: BoxFit.cover)),
+
+    child:   Stack(
+      children: [
+        Container(
+
+        height: 200,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              color: Colors.blueAccent,
+              border: Border.all(color: Colors.white70,width: 3),
+              image: const DecorationImage(
+                  image: AssetImage("media/images/img.png"),
+                  fit: BoxFit.cover)),
+        ),
+
+      ],
+    ),
+),
+  Container(child:ListTile(
+    title: Text("Name",style: TextStyle(color: Color(0xff060935)),),
+    subtitle: Text("27 Ago",style: TextStyle(color: Color(0xff060935)),),
+     leading:     Stack(
+         children: [
+           CircleAvatar(
+             backgroundColor: Color(0xff00A3FF),
+             backgroundImage: AssetImage("media/images/img.png"),
+             radius: 25.0,
+           ),
+
+         ]
+     ),
+  ),)
+
+
+],
+
+        ),)
   );
 }

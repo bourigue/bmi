@@ -15,9 +15,10 @@ class splash_screen extends StatelessWidget {
             duration: 3000,
             splash: Icons.home,
             nextScreen: Example(),
-            splashTransition: SplashTransition.fadeTransition,
+            splashTransition: SplashTransition.scaleTransition,
            // pageTransitionType: PageTransitionType.scale,
-            backgroundColor: Colors.blue));
+            backgroundColor: Colors.blue,
+        ));
   }
 }
 

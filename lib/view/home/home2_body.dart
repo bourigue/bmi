@@ -40,7 +40,6 @@ class homecoloco2 extends StatelessWidget{
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blueAccent,
-                      border: Border.all(color: Colors.white70,width: 3),
                       image: const DecorationImage(
                           image: AssetImage("media/images/img.png"),
                           fit: BoxFit.cover)),
@@ -154,22 +153,7 @@ class homecoloco2 extends StatelessWidget{
                   child: ListView(
                     children: [
                       //Now let's create our chat tile custom widget
-                      card("ghjk"),
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
-
-                      card("ghjk"),
+                      card("ghjk",56,456,"ghjk",66,"ghjk"),
                     ],
                   ),
                 ),
