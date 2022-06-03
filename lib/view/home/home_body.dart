@@ -272,7 +272,6 @@ Widget Filtre(String name){
 Widget card(String name){
   return      InkWell(
     onTap: (){
-
       print("jdj");
     },
     child: Container(
