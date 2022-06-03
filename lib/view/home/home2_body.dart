@@ -1,14 +1,18 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'bottom_navigation.dart';
 import 'home_body.dart';
 
 class homecoloco2 extends StatelessWidget{
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-
+        backgroundColor: Color(0xff4943f0),
         body:Column(
 
 
@@ -18,28 +22,14 @@ class homecoloco2 extends StatelessWidget{
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /*  Stack(
+            /* Stack(
                           children: [
                             CircleAvatar(
                               backgroundColor: Color(0xff00A3FF),
                               backgroundImage: AssetImage("media/images/img.png"),
                               radius: 25.0,
                             ),
-                            Positioned(
-                                right: 0,
-                                top: 0,
-                                child: Container(
-                                    padding: EdgeInsets.all(7.5),
-                                    decoration: BoxDecoration(
-                                        border: Border.all(
-                                            width: 2,
-                                            color: Colors.white
-                                        ),
-                                        borderRadius: BorderRadius.circular(90.0),
-                                        color: Colors.green
-                                    )
-                                )
-                            )
+
                           ]
                       ),*/
             Stack(
@@ -50,26 +40,12 @@ class homecoloco2 extends StatelessWidget{
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blueAccent,
-                      border: Border.all(color: Colors.white70,width: 4),
+                      border: Border.all(color: Colors.white70,width: 3),
                       image: const DecorationImage(
                           image: AssetImage("media/images/img.png"),
                           fit: BoxFit.cover)),
                 ),
-                Positioned(
-                    right: 0,
-                    top: 0,
-                    child: Container(
-                        padding: EdgeInsets.all(7.5),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                                width: 2,
-                                color: Colors.white
-                            ),
-                            borderRadius: BorderRadius.circular(90.0),
-                            color: Colors.green
-                        )
-                    )
-                )
+
               ],
             ),
 
@@ -128,17 +104,19 @@ class homecoloco2 extends StatelessWidget{
               ),
 
             ),
-           SizedBox(height: 8,)
+           SizedBox(height: 30,)
            ,
 
-           Row(children: [Expanded(child:  Container(
-             padding: EdgeInsets.all(2),
+           Row(
+             children: [Expanded(child:  Container(
+              //padding: EdgeInsets.only(top: 15),
+               padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 15.0),
              decoration: const BoxDecoration(
                borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight:Radius.circular(20) ),
                color: Colors.white,
 
              ),
-             height: 50.0,
+             height: 60.0,
              child: Padding(
                padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
                child: ListView(

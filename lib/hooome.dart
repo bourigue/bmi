@@ -1,3 +1,4 @@
+import 'package:bmi/view/home/bottom_navigation.dart';
 import 'package:bmi/view/home/home2_body.dart';
 import 'package:bmi/view/home/home_body.dart';
 import 'package:bmi/view/page1.dart';
@@ -12,15 +13,12 @@ void main(){
 
  runApp(GetMaterialApp(
      initialBinding: bindingcontroller(),
-     home: homecoloco(),
+     home: Example(),
      getPages: [
 GetPage(name: "/Home", page: ()=>Home()),
 GetPage(name: "/page2", page: ()=>page2()),
      ],
    theme: ThemeData(
-     primaryColor: Color.fromRGBO(73, 67, 240, 1),
-     visualDensity: VisualDensity.adaptivePlatformDensity,
-     scaffoldBackgroundColor: Color.fromRGBO(73, 67, 240, 1),
 
 
    ),

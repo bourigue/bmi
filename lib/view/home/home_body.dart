@@ -278,7 +278,7 @@ Widget card(String name){
     child: Container(
         height: 300,
         margin: EdgeInsets.symmetric(horizontal: 5),
-        padding: EdgeInsets.all(5),
+        padding: EdgeInsets.all(10),
         decoration:  BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(5)),
             color: Colors.white,
