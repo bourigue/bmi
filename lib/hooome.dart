@@ -1,3 +1,4 @@
+import 'package:bmi/view/home/home2_body.dart';
 import 'package:bmi/view/home/home_body.dart';
 import 'package:bmi/view/page1.dart';
 
@@ -11,7 +12,7 @@ void main(){
 
  runApp(GetMaterialApp(
      initialBinding: bindingcontroller(),
-     home: homecoloco(),
+     home: homecoloco2(),
      getPages: [
 GetPage(name: "/Home", page: ()=>Home()),
 GetPage(name: "/page2", page: ()=>page2()),
@@ -20,7 +21,7 @@ GetPage(name: "/page2", page: ()=>page2()),
      primaryColor: Color.fromRGBO(73, 67, 240, 1),
      visualDensity: VisualDensity.adaptivePlatformDensity,
      scaffoldBackgroundColor: Color.fromRGBO(73, 67, 240, 1),
-     brightness: Brightness.light
+
 
    ),
 debugShowCheckedModeBanner: false,
@@ -35,7 +36,7 @@ class home extends StatelessWidget{
  @override
  Widget build(BuildContext context) {
   return Scaffold(
-backgroundColor:Colors.blueAccent ,
+  backgroundColor:Colors.blueAccent ,
 
 
    body:Center(

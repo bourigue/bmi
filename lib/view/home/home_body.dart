@@ -1,9 +1,24 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class homecoloco extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: CurvedNavigationBar(
+        color:Colors.white,
+       buttonBackgroundColor: Color.fromRGBO(73, 67, 240, 1),
+       backgroundColor: Colors.white,
+       // key: _bottomNavigationKey,
+        items: <Widget>[
+          Icon(Icons.home, size: 30),
+          Icon(Icons.add, size: 30),
+          Icon(Icons.person, size: 30),
+        ],
+        onTap: (index) {
+
+        },
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -132,38 +147,32 @@ class homecoloco extends StatelessWidget{
                 height: 20,
               ),
               Container(
-                    decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight:Radius.circular(20) ),
-                    color: Colors.white,
+                padding: EdgeInsets.all(15),
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(topLeft:Radius.circular(20),topRight:Radius.circular(20) ),
+                  color: Colors.white,
 
-                  ),
+                ),
 
                 child: Column(
+
                   children: [
-                    const SizedBox(
-                      height: 30,
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
-                      child: Text(
-                        "Departments",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
+
+
+
                     SizedBox(
-                      height: 120,
+                      height: 36,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          const SizedBox(
-                            width: 20,
-                          ),
+                          Filtrename("Filtre"),
+                          Filtre("man"),
+                          Filtre("woman"),
+                          Filtre("room"),
+                          Filtre("fa9ir"),
+                          Filtre("mgarad"),
+                          Filtre("mhansar"),
+
                         ],
                       ),
                     ),
@@ -188,6 +197,23 @@ class homecoloco extends StatelessWidget{
                       physics: NeverScrollableScrollPhysics(),
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       children: [
+                        card("ghjk"),
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
+                        card("ghjk"),
+
 
                       ],
                     )
@@ -195,6 +221,7 @@ class homecoloco extends StatelessWidget{
                 ),
 
               )
+
 
 
 
@@ -208,3 +235,54 @@ class homecoloco extends StatelessWidget{
 
 }
 
+Widget Filtrename(String name){
+  return      InkWell(
+    onTap: (){
+
+      print("Filtring ");
+    },
+    child: Container(
+
+      margin: EdgeInsets.symmetric(horizontal: 5),
+        padding: EdgeInsets.all(5),
+        decoration:  BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            color: Colors.white,
+            border: Border.all(color: Colors.black12)),
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text("Filtters",style: TextStyle(fontSize:15),),SizedBox(width: 4,),Text("0",style: TextStyle(fontSize:15,color: Colors.red),)],)),
+  );
+}
+Widget Filtre(String name){
+  return      InkWell(
+    onTap: (){
+
+      print("jdj");
+    },
+    child: Container(
+
+        margin: EdgeInsets.symmetric(horizontal: 5),
+        padding: EdgeInsets.all(5),
+        decoration:  BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            color: Colors.white,
+            border: Border.all(color: Colors.black12)),
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
+  );
+}
+Widget card(String name){
+  return      InkWell(
+    onTap: (){
+
+      print("jdj");
+    },
+    child: Container(
+        height: 300,
+        margin: EdgeInsets.symmetric(horizontal: 5),
+        padding: EdgeInsets.all(5),
+        decoration:  BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            color: Colors.white,
+            border: Border.all(color: Colors.black12)),
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
+  );
+}
