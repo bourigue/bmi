@@ -12,7 +12,7 @@ void main(){
 
  runApp(GetMaterialApp(
      initialBinding: bindingcontroller(),
-     home: homecoloco2(),
+     home: homecoloco(),
      getPages: [
 GetPage(name: "/Home", page: ()=>Home()),
 GetPage(name: "/page2", page: ()=>page2()),

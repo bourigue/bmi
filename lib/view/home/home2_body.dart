@@ -103,6 +103,33 @@ class homecoloco2 extends StatelessWidget{
           ],
         ),
       ),
+            Container(
+              height:50,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: TextField(
+
+                decoration: InputDecoration(
+                    enabled: true,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      borderSide: BorderSide.none,
+                    ),
+                    suffixIcon: const Icon(
+                      Icons.search,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+                    fillColor: Colors.grey[200],
+                    filled: true,
+                    hintText: "Search by city",
+                    contentPadding: EdgeInsets.symmetric(horizontal: 28,vertical: 4)
+
+                ),
+              ),
+
+            ),
+           SizedBox(height: 8,)
+           ,
 
            Row(children: [Expanded(child:  Container(
              padding: EdgeInsets.all(2),
@@ -113,25 +140,25 @@ class homecoloco2 extends StatelessWidget{
              ),
              height: 50.0,
              child: Padding(
-               padding:
-               const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+               padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
                child: ListView(
                  scrollDirection: Axis.horizontal,
                  children: [
                    //Let'  Filtre("man"),s create a custom widget for our story button
+                   Filtrename("Filtre"),
                    Filtre("man"),
-                   Filtre("man"),
-                   Filtre("man"),
-                   Filtre("man"),
-                   Filtre("man"),
-                   Filtre("man"),
+                   Filtre("woman"),
+                   Filtre("room"),
+                   Filtre("fa9ir"),
+                   Filtre("mgarad"),
+                   Filtre("mhansar"),
                  ],
                ),
              ),
            ))],),
-      
 
-      
+
+
             //Now let's create our chat timeline
             Expanded(
               child: Container(
@@ -141,7 +168,7 @@ class homecoloco2 extends StatelessWidget{
                 ),
                 padding: EdgeInsets.all(15),
 
-                
+
 
                 child: Padding(
                   padding:
