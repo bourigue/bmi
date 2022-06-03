@@ -1,6 +1,7 @@
 import 'package:bmi/view/home/bottom_navigation.dart';
 import 'package:bmi/view/home/home2_body.dart';
 import 'package:bmi/view/home/home_body.dart';
+import 'package:bmi/view/home/spalsh_screnn.dart';
 import 'package:bmi/view/page1.dart';
 
 import 'package:bmi/view/page2.dart';
@@ -13,7 +14,7 @@ void main(){
 
  runApp(GetMaterialApp(
      initialBinding: bindingcontroller(),
-     home: Example(),
+     home: splash_screen(),
      getPages: [
 GetPage(name: "/Home", page: ()=>Home()),
 GetPage(name: "/page2", page: ()=>page2()),
