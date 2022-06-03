@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'bottom_navigation.dart';
 import 'home_body.dart';
+import 'home_card_img.dart';
 
 class homecoloco2 extends StatelessWidget{
 
