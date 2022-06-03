@@ -17,9 +17,9 @@ GetPage(name: "/Home", page: ()=>Home()),
 GetPage(name: "/page2", page: ()=>page2()),
      ],
    theme: ThemeData(
-     primaryColor: Colors.indigoAccent,
+     primaryColor: Color.fromRGBO(73, 67, 240, 1),
      visualDensity: VisualDensity.adaptivePlatformDensity,
-     scaffoldBackgroundColor: Colors.green,
+     scaffoldBackgroundColor: Color.fromRGBO(73, 67, 240, 1),
      brightness: Brightness.light
 
    ),
