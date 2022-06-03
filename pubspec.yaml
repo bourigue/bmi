@@ -32,6 +32,8 @@ dependencies:
 
 
   awesome_snackbar_content:
+  carousel_slider: ^4.1.1
+
   google_nav_bar: ^5.0.6
   animated_splash_screen: ^1.2.0
   get:

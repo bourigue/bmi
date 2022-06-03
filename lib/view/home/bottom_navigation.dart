@@ -16,7 +16,7 @@ class _ExampleState extends State<Example> {
   static  List<Widget> _widgetOptions = <Widget>[
     homecoloco2(),
     Text(
-      'Likes',
+      'hassa',
       style: optionStyle,
     ),
     Text(

@@ -248,7 +248,7 @@ Widget Filtre(String name){
   return      InkWell(
     onTap: (){
 
-      print("jdj");
+
     },
     child: Container(
 
@@ -258,17 +258,19 @@ Widget Filtre(String name){
             borderRadius: BorderRadius.all(Radius.circular(5)),
             color: Colors.white,
             border: Border.all(color: Colors.black12)),
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
+        child: Row(
+
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Text(name,style: TextStyle(fontSize:15),),Icon(Icons.delete_forever,color:Colors.red,size:15,)],)),
   );
 }
 Widget card(String name,int age,double budget, String localisation, int capacity,String profile){
   return      InkWell(
     onTap: (){
-      print("jdj");
+
     },
     child: Container(
-        height:300,
-        margin: EdgeInsets.symmetric(horizontal: 5),
+
+        margin: EdgeInsets.symmetric(horizontal: 5,vertical: 2),
         padding: EdgeInsets.all(10),
         decoration:  BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(16)),
@@ -277,34 +279,22 @@ Widget card(String name,int age,double budget, String localisation, int capacity
         child: Column(
 children: [
 
-  Container(
+          SizedBox(
+          height: 150,
 
-decoration: BoxDecoration(
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              scrollimage("media/images/romme1.png"),
+              scrollimage("media/images/romme2.jpg"),
+              scrollimage("media/images/romme3.jpg"),
 
-
-    borderRadius: BorderRadius.all(Radius.circular(5)),
-
-        image: DecorationImage(
-            image: AssetImage("media/images/img.png"),
-        fit: BoxFit.cover)),
-
-    child:   Stack(
-      children: [
-        Container(
-
-        height: 200,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-              color: Colors.blueAccent,
-              border: Border.all(color: Colors.white70,width: 3),
-              image: const DecorationImage(
-                  image: AssetImage("media/images/img.png"),
-                  fit: BoxFit.cover)),
+            ],
+          ),
         ),
 
-      ],
-    ),
-),
+
+
   Container(child:ListTile(
     title: Text("Name",style: TextStyle(color: Color(0xff060935)),),
     subtitle: Text("27 Ago",style: TextStyle(color: Color(0xff060935)),),
@@ -318,13 +308,35 @@ decoration: BoxDecoration(
 
          ]
      ),
-    trailing: Icon(Icons.local_library,color: Colors.red,),
+    trailing: Icon(Icons.location_on_outlined,color: Colors.red,),
 
-  ),)
+  ),),
+  Row(
+    mainAxisAlignment:MainAxisAlignment.spaceBetween,
+    children: [
+    Text("${capacity} personn"),
+   Row(children: [ Text(budget.toString()),SizedBox(width: 1,),Text("  DH/month",style: TextStyle(fontWeight: FontWeight.w800),)],)
+  ],)
 
 
 ],
 
         ),)
   );
+}
+Widget scrollimage(String image){
+
+  return  Container(
+    height: 300,
+    width: 300,
+
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+        color: Colors.blueAccent,
+        border: Border.all(color: Colors.white70,width: 3),
+        image:  DecorationImage(
+            image: AssetImage(image),
+            fit: BoxFit.cover)),
+  );
+
 }
