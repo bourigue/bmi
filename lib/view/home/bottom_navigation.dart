@@ -83,6 +83,8 @@ class Example extends StatelessWidget{
                 selectedIndex: _selectedIndex,
                 onTabChange: (index) {
 
+
+
                   /*
                 setState(() {
                   _selectedIndex = index;
