@@ -9,6 +9,7 @@ import 'controller/Binging.dart';
 void main(){
  runApp(GetMaterialApp(
    initialBinding: Binding(),
+
      home: splash_screen(),
 debugShowCheckedModeBanner: false,
  ));
