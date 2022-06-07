@@ -77,7 +77,7 @@ class Example extends StatelessWidget{
                   ),
                   GButton(
                     icon: Icons.person,
-                    text: 'Profile',
+                    text: 'Profilee',
                   ),
                 ],
                 selectedIndex: _selectedIndex,
