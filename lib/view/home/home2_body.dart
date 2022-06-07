@@ -1,15 +1,10 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'bottom_navigation.dart';
 import 'home_body.dart';
 import 'home_card_img.dart';
 
-class homecoloco2 extends StatelessWidget{
-
-
-  @override
+class home extends StatelessWidget{
+ @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
@@ -23,16 +18,6 @@ class homecoloco2 extends StatelessWidget{
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /* Stack(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Color(0xff00A3FF),
-                              backgroundImage: AssetImage("media/images/img.png"),
-                              radius: 25.0,
-                            ),
-
-                          ]
-                      ),*/
             Stack(
               children: [
                 Container(
@@ -48,10 +33,7 @@ class homecoloco2 extends StatelessWidget{
 
               ],
             ),
-
-
-
-            Expanded(
+      Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: const [
@@ -106,8 +88,7 @@ class homecoloco2 extends StatelessWidget{
             ),
            SizedBox(height: 30,)
            ,
-
-           Row(
+        Row(
              children: [Expanded(child:  Container(
               //padding: EdgeInsets.only(top: 15),
                padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 15.0),
@@ -134,10 +115,7 @@ class homecoloco2 extends StatelessWidget{
                ),
              ),
            ))],),
-
-
-
-            //Now let's create our chat timeline
+      //Now let's create our chat timeline
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
@@ -145,9 +123,6 @@ class homecoloco2 extends StatelessWidget{
 
                 ),
                 padding: EdgeInsets.all(15),
-
-
-
                 child: Padding(
                   padding:
                   const EdgeInsets.only(left: 12.0, right: 12.0, top: 10.0),

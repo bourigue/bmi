@@ -6,7 +6,6 @@ Widget card(String name,int age,double budget, String localisation, int capacity
 
       },
       child: Container(
-
         margin: EdgeInsets.symmetric(horizontal: 5,vertical: 2),
         padding: EdgeInsets.all(10),
         decoration:  BoxDecoration(
@@ -63,7 +62,6 @@ Widget card(String name,int age,double budget, String localisation, int capacity
 }
 
 Widget scrollimage(String image){
-
   return  Container(
     height: 300,
     width: 300,

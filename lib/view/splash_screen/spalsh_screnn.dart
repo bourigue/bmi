@@ -2,7 +2,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'bottom_navigation.dart';
+import '../home/bottom_navigation.dart';
 
 
 class splash_screen extends StatelessWidget {

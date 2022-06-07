@@ -4,17 +4,23 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'home2_body.dart';
 
-class Example extends StatefulWidget {
+class Example extends StatelessWidget{
   @override
   _ExampleState createState() => _ExampleState();
+
+  @override
+  Widget build(BuildContext context) {
+
+    throw UnimplementedError();
+  }
 }
 
-class _ExampleState extends State<Example> {
+class _ExampleState {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static  List<Widget> _widgetOptions = <Widget>[
-    homecoloco2(),
+    home(),
     Text(
       'hassa',
       style: optionStyle,
@@ -82,9 +88,12 @@ class _ExampleState extends State<Example> {
               ],
               selectedIndex: _selectedIndex,
               onTabChange: (index) {
+
+                /*
                 setState(() {
                   _selectedIndex = index;
-                });
+                });*/
+
               },
             ),
           ),
@@ -92,4 +101,8 @@ class _ExampleState extends State<Example> {
       ),
     );
   }
+
+
 }
+
+
