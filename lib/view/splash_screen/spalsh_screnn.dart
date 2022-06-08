@@ -2,7 +2,8 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../home/bottom_navigation.dart';
+import '../home/DashbordPages.dart';
+import '../home/bottomNavigationBar.dart';
 
 
 class splash_screen extends StatelessWidget {
@@ -14,7 +15,7 @@ class splash_screen extends StatelessWidget {
         home: AnimatedSplashScreen(
             duration: 3000,
             splash: Icons.home,
-            nextScreen: Example(),
+            nextScreen: DashboardPage(),
             splashTransition: SplashTransition.scaleTransition,
            // pageTransitionType: PageTransitionType.scale,
             backgroundColor: Colors.blue,
